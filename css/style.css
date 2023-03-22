@@ -35,7 +35,7 @@ body {
 }
 
 .name {
-    font-size: 2em;
+    font-size: 1.5rem;
     text-transform: uppercase;
     color: #f7c34b;
     font-weight: 700;
@@ -53,7 +53,7 @@ body {
 }
 
 .encabeza .nav ul li a {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     color: #f7c34b;
     text-decoration: none;
     padding: 20px;
@@ -231,9 +231,77 @@ body {
 /* MEDIAS QUERIES */
 
 /* TABLETA */
-@media only screen and (max-width: 768px){}
+@media only screen and (max-width: 768px){
+
+/* INICIO */
+
+.encabeza {
+    flex-direction: column;
+}
+
+.text-1 {
+    margin: auto;
+}
+
+.nav {
+    display: block;
+}
+
+.text-tittle {
+    flex-direction: column;
+    text-align: center;
+}
+
+.container {
+    flex-direction: column;
+}
+
+.container2 {
+    flex-direction: columns;
+}
+
+/* CATEGORIA */
+
+.containercategoria {
+    grid-template-columns: 1fr;
+}
+
+.imgcc {
+    width: 400px;
+    height: 200px;
+    margin-bottom: 30px;
+    object-fit: cover; /* Ajusta la imagen cuando tienen diferentes tamnaños */
+ }
 
 
+/* NOSOTROS */
+.containera {
+    flex-direction: column;
+}
+
+.htres {
+    text-align: center;
+}
+
+.bloa1 {
+    width: auto;
+    text-align: center;
+}
+
+.bloa2 {
+    width: auto;
+    margin: 2rem;
+}
+
+
+         /* CONTACTO */
+
+.text-tittle {
+    flex-direction: column;
+    text-align: center;
+}
+
+}
 
 /* MOBILE */
 
@@ -303,13 +371,7 @@ body {
 .text-tittle {
     flex-direction: column;
     text-align: center;
-}image.png
-         /* SOCIAL MEDIA */
-
-
-
-
-
-
+}
+  
 
 }
