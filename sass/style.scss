@@ -45,48 +45,51 @@ body {
         color: $amarillodora;
         font-weight: 700;
     }
-    ul {
-        list-style: none;  
-    }
-        li {
+        /* me quita los puntos de lista */
+        ul {
+            list-style: none;
+        }
+
+        /* Aqui me da la direccion de barra */
+            li {
             float: left;
             position: relative
         }
-            a {
-                font-size: 1.5rem;
-                color: $amarillodora;
-                text-decoration: none;
-                padding: 20px;
-                display: flex;            
-                transition: all .2s ease;
-            }
-            a:hover {
+
+                a {
+                    font-size: 1.5rem;
+                    color: $amarillodora;
+                    text-decoration: none;
+                    padding: 20px;
+                    display: flex;            /* REALICE CAMBIO PARA MOBILE  ERA BLOCK */
+                    transition: all .2s ease;
+                }
+
+            .encabeza .nav ul li a:hover {
                 background-color: $verdepasion;
             }
 
-                ul {
-                    position: absolute;
-                    right: 0;
-                    width: 300px;
-                    background-color: rgba(255, 255, 255, 0.20);
-                    display: none;
+            .encabeza .nav ul li ul {
+                position: absolute;
+                right: 0;
+                width: 300px;
+                background-color: rgba(255, 255, 255, 0.20);
+                display: none;
+            }
+
+                /* Tamaño segunda categoria */
+                .encabeza .nav ul li ul li a {
+                    font-size: 1rem;
+                    text-transform: capitalize;
+                } 
+
+                .encabeza .nav ul li ul li {
+                    width: 100%;
                 }
-
-                    li:hover > ul {
-                        display: initial;
-                    }
-
-                        li {
-                            width: 100%;
-                        }
-                            /* Tamaño segunda categoria */
-                            a {
-                                font-size: 1rem;
-                                text-transform: capitalize;
-                            } 
-
                 
-
+                .encabeza .nav ul li:hover > ul {
+                    display: initial;
+                }
 }
 
 /* general */

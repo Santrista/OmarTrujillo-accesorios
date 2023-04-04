@@ -114,6 +114,8 @@ body {
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
+  /* me quita los puntos de lista */
+  /* Aqui me da la direccion de barra */
   /* Tamaño segunda categoria */
 }
 .encabeza .name {
@@ -134,28 +136,28 @@ body {
   color: #f7c34b;
   text-decoration: none;
   padding: 20px;
-  display: flex;
+  display: flex; /* REALICE CAMBIO PARA MOBILE  ERA BLOCK */
   transition: all 0.2s ease;
 }
-.encabeza a:hover {
+.encabeza .encabeza .nav ul li a:hover {
   background-color: #1f4c4c;
 }
-.encabeza ul {
+.encabeza .encabeza .nav ul li ul {
   position: absolute;
   right: 0;
   width: 300px;
   background-color: rgba(255, 255, 255, 0.2);
   display: none;
 }
-.encabeza li:hover > ul {
-  display: initial;
-}
-.encabeza li {
-  width: 100%;
-}
-.encabeza a {
+.encabeza .encabeza .nav ul li ul li a {
   font-size: 1rem;
   text-transform: capitalize;
+}
+.encabeza .encabeza .nav ul li ul li {
+  width: 100%;
+}
+.encabeza .encabeza .nav ul li:hover > ul {
+  display: initial;
 }
 
 /* general */
