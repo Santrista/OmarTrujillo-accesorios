@@ -114,6 +114,7 @@ body {
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
+  /* AQUI PORQUE TENGO QUE MENCIONAR CLASE Y ARRIBA NO ? */
 }
 .encabeza .name {
   font-size: 1.5rem;
