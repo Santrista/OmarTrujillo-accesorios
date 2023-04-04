@@ -1,0 +1,21 @@
+
+@mixin tamaños ($width, $height){
+    width: $width;
+    height: $height;
+}
+
+.containercategoria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 35px;
+    justify-items: center;
+}
+    
+.imgcc {
+/*     width: 600px;
+    height: 500px; */
+    @include tamaños(600px, 500px);
+    margin-bottom: 30px;
+    object-fit: cover; /* Ajusta la imagen cuando tienen diferentes tamnaños */
+}
